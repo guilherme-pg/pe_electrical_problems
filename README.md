@@ -29,52 +29,89 @@ A typology may refer to different categories or subcategories, but the record is
 In other words, the typology of 'Power Outage' may be present as a category of 'Information' or 'Complaint', the user or citizen who classified this issue may have had different intentions in relation to the same problem, the power outage.
 
 
+
+### **Exploratory Data Analysis**
+
+Although Pernambuco (PE) in 2022 is in third place in terms of number of complaints, from 2023 onwards it surpasses the states of Bahia (BA) and Ceará (CE) with growth in 2024. While BA and CE show a decrease in 2024.
+
 <p align="center">
   <img src="./images/p01_northeast_complaints.png" alt="Land Page" style="height: 400px;"/>
 </p>
+
+
+In the northeast, the lack of energy proved to be the main cause of complaints and with an increasing number between 2022 and 2024.
 
 <p align="center">
   <img src="./images/p02_10_types_northeast_complaints.png" alt="Land Page" style="height: 400px;"/>
 </p>
 
+
+Lack of energy has shown to increase the number of complaints in Pernambuco in relation to other states. With a continuous increase in the number of complaints.
+
 <p align="center">
   <img src="./images/p03_energy_lack_northeast_complaints.png" alt="Land Page" style="height: 400px;"/>
 </p>
+
+
+In Pernambuco, the lack of energy appears as the main type of complaint.
 
 <p align="center">
   <img src="./images/p04_10_types_pernambuco_complaints.png" alt="Land Page" style="height: 400px;"/>
 </p>
 
+
+In Pernambuco, 2022 and 2023 showed a uniform pattern in the number of complaints due to lack of energy, although 2023 saw an increase compared to 2022.
+However, it was in 2024 that the greatest discrepancy occurred in the first half of the year, especially in the first half of the year. Ending the year with a downward trend.
+
 <p align="center">
   <img src="./images/p05_10_types_pernambuco_complaints.png" alt="Land Page" style="height: 400px;"/>
 </p>
+
+
+In turn, among the municipalities of Pernambuco, Recife (Capital) had the highest number of complaints about power outages.
+However, this may be linked to the proportion of its population, which is the largest in the State.
 
 <p align="center">
   <img src="./images/p06_10_types_municipalities_complaints.png" alt="Land Page" style="height: 400px;"/>
 </p>
 
+
+Recife presented a similar flow of complaints to that of Pernambuco, which, given the size of its population, indicates that the situation in Pernambuco mirrors to a certain extent what occurs in Recife.
+A highlight is the month of May 2022 in Recife, which presents a different increase from what occurs in the state as a whole in the same year.
+
 <p align="center">
   <img src="./images/p07_recife_complaints.png" alt="Land Page" style="height: 400px;"/>
 </p>
+
+
+Although Recife is the most populous city and has the highest number of complaints about power outages, proportionally it does not even appear among the top 25 cities with the highest number of complaints per inhabitant.
 
 <p align="center">
   <img src="./images/p08_pe_complaints_proportion.png" alt="Land Page" style="height: 400px;"/>
 </p>
 
+
+
+
 ### **Anomaly Detection**
 The **Local Outlier Factor (LOF)** is an anomaly (or outliers) detection algorithm.
 It is especially useful when you want to identify points that behave differently from the rest of the data, considering the local context of their surroundings.
 Based on other performance tests with the Isolation Forest and One-Class SVM models, LOF was deprecated since it showed a more conservative performance in identifying outliers.
+<br>
+
+Although some peaks occurred between 2022, it is at the end of 20233 and the first half of 2024 that there is the longest period with complaints about lack of energy that differ from the standard amount of complaints.
 
 <p align="center">
   <img src="./images/p09_pe_anomalies_detected_2022_2024.png" alt="Land Page" style="height: 400px;"/>
 </p>
 
+The first half of 2024 is the period with the highest number of complaints.
 
 <p align="center">
   <img src="./images/p10_pe_anomalies_detected_only_2024.png" alt="Land Page" style="height: 400px;"/>
 </p>
 
+Therefore, Recife directly influences the perception of these distinct cases in Pernambuco.
 
 <p align="center">
   <img src="./images/p11_recife_anomalies_detected_only_2024.png" alt="Land Page" style="height: 400px;"/>
